@@ -2,36 +2,60 @@
 # Created on 16/10/24
 # ---------------------
 
-
-"""
-
-GAINS
-
-21.203398393975398
-21.203398393975398
-21.203398393975398
-
-GINI
-
--39.5
--71.5
--71.5
-
-CHI
-
-10.213333333333333
-2.8888888888888884
-2.8888888888888884
-
-"""
-
 # ---------------------------
 # Attribuite: Headache
 # Contingency table:
 # [[3, 0], [2, 3]]
 # --------------------------
 # Infomation gain
-#
+# H(root) -(p(0) * log(P(0)) + p(1) * log(P(1)))
+# Gain(root, Headache) = 21.203398393975398
+# ------------------------------
+# Gini
+# 1- p²(0) + p²(1)
+# Gain(root, Headache) = -39.5
+# --------------------------------------------------
+# Chi-square
+# (observed - expected)^2 / expected
+# Chi (root, Headache) = 10.21333
+# --------------------------------------------------
+
+# ---------------------------
+# Attribuite: Spots
+# Contingency table:
+# [[4, 1], [1, 2]]
+# --------------------------
+# Infomation gain
+# H(root) -(p(0) * log(P(0)) + p(1) * log(P(1)))
+# Gain(root, Headache) = 21.203398393975398
+# ------------------------------
+# Gini
+# 1- p²(0) + p²(1)
+# Gain(root, Headache) = -71.5
+# --------------------------------------------------
+# Chi-square
+# (observed - expected)^2 / expected
+# Chi (root, Headache) = 2.8888
+# ------------------------------
+
+# ---------------------------
+# Attribuite: Spots
+# Contingency table:
+# [4, 1], [1, 2]
+# --------------------------
+# Infomation gain
+# H(root) -(p(0) * log(P(0)) + p(1) * log(P(1)))
+# Gain(root, Headache) = 21.203398393975398
+# ------------------------------
+# Gini
+# 1- p²(0) + p²(1)
+# Gain(root, Headache) = -71.5
+# --------------------------------------------------
+# Chi-square
+# (observed - expected)^2 / expected
+# Chi (root, Headache) = 2.8888
+# ------------------------------
+
 
 import math
 from warnings import warn
