@@ -58,8 +58,6 @@
 
 
 import math
-from warnings import warn
-import numpy as np
 
 
 def get_gain(contingency_table):
