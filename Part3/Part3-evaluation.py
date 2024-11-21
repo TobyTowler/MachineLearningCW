@@ -1,3 +1,6 @@
+# Description: Evaluation of different classifer types from SKLEARN library
+# Created on: 21/11/24
+# --------------------------------------------------
 from sklearn import datasets as skd, neighbors
 from sklearn import model_selection as skms
 from sklearn import ensemble as ske
